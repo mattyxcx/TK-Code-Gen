@@ -100,7 +100,7 @@ async function search(query,dept,price) {
   var fb = `${filter} && price.value:=${price}`
   await axios({
       method: 'post',
-      url: process.env.search_url,
+      url: "https://0yldnjc3uh75kos1p-1.a1.typesense.net/multi_search?x-typesense-api-key=svDuhhXXaQ2tKOzpAZ2qiTcmkJTuacrb",
       data: {
             "searches": [
                 {
